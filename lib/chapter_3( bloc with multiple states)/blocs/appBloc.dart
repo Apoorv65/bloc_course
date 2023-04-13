@@ -8,10 +8,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class AppBloc extends Bloc<AppEvents, AppState> {
   final LoginApiProtocol loginApi;
   final NotesApiProtocol notesApi;
+  final LoginHandle acceptedLoginHandle;
 
   AppBloc({
     required this.loginApi,
     required this.notesApi,
+    required this.acceptedLoginHandle,
   }) : super(const AppState.empty()) {
     on<LoginEvent>((event, emit) async {
       emit(
@@ -47,7 +49,7 @@ class AppBloc extends Bloc<AppEvents, AppState> {
         ),
       );
       final loginHandle = state.loginHandle;
-      if (loginHandle != const LoginHandle.fooBar()) {
+      if (loginHandle != acceptedLoginHandle) {
 
         emit(
           AppState(

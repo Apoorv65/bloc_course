@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
     return BlocProvider(
       create: (context) => AppBloc(
         loginApi: LoginApi(),
-        notesApi: NotesApi(),
+        notesApi: NotesApi(), acceptedLoginHandle: const LoginHandle.fooBar(),
       ),
       child: Scaffold(
         appBar: AppBar(
