@@ -1,6 +1,6 @@
-import 'package:bloc_course/chapter_4(%20)/blocs/bottom_bloc.dart';
-import 'package:bloc_course/chapter_4(%20)/blocs/upper_bloc.dart';
-import 'package:bloc_course/chapter_4(%20)/views/appBlocView.dart';
+import 'package:bloc_course/chapter_4(%20multiBloc%20Provider%20)/blocs/bottom_bloc.dart';
+import 'package:bloc_course/chapter_4(%20multiBloc%20Provider%20)/blocs/upper_bloc.dart';
+import 'package:bloc_course/chapter_4(%20multiBloc%20Provider%20)/views/appBlocView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

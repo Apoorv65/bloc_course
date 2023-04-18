@@ -1,7 +1,7 @@
-import 'package:bloc_course/chapter_4(%20)/blocs/app_bloc.dart';
-import 'package:bloc_course/chapter_4(%20)/extension/stream/startWith.dart';
+import 'package:bloc_course/chapter_4(%20multiBloc%20Provider%20)/extension/stream/startWith.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../blocs/app_bloc.dart';
 
 class AppBlocView<T extends AppBloc> extends StatelessWidget {
   const AppBlocView({Key? key}) : super(key: key);
@@ -27,15 +27,16 @@ class AppBlocView<T extends AppBloc> extends StatelessWidget {
               child: Text('An error occurred, please try again.'));
         } else if (state.data != null) {
           return Center(
-              child: Card(
-                shadowColor: Colors.black38,
-
-                  elevation: 50,
-                  child: Image.memory(
-                    state.data!,
-                    height: h * .4,
-                    fit: BoxFit.fitHeight,
-                  )));
+            child: Card(
+              shadowColor: Colors.black38,
+              elevation: 50,
+              child: Image.memory(
+                state.data!,
+                height: h * .4,
+                fit: BoxFit.fitHeight,
+              ),
+            ),
+          );
         } else {
           return const Center(
               child: CircularProgressIndicator(
