@@ -14,6 +14,7 @@ Future<T?> showGenericDialog<T>({
     context: context,
     builder: (context){
       return AlertDialog(
+        backgroundColor: const Color(0xfff3c2d0),
         title: Text(title,style: GoogleFonts.kumbhSans(),),
         content: Text(description,style: GoogleFonts.kumbhSans(),),
         actions: options.keys.map((optionsTitle){
@@ -24,7 +25,7 @@ Future<T?> showGenericDialog<T>({
               }else{
                 Navigator.of(context).pop;
               }
-            }, child: Text(optionsTitle,style: GoogleFonts.kumbhSans(),),);
+            }, child: Text(optionsTitle,style: GoogleFonts.kumbhSans(color: const Color(0xffc70a41),),),);
           }).toList()
         ,
       );

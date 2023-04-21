@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "27304237920",
+    "project_id": "bloccourse-5-chap",
+    "storage_bucket": "bloccourse-5-chap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27304237920:android:1d2f4ce3ca6a2f6de65c05",
+        "android_client_info": {
+          "package_name": "com.example.bloc_course"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27304237920-4c3pe98ce6q8a4ivr37mjceum2spgn08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAomHHrqiuFHoEpLjqxJ6vwq6Qj7J4wnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27304237920-4c3pe98ce6q8a4ivr37mjceum2spgn08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
